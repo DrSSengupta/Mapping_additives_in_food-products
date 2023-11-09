@@ -116,3 +116,30 @@ fig_meat <- UpSetR::upset(fromList(ma_meat_comb_list), sets = names(ma_meat_comb
 png(filename = "./output/meat_and_analogues.png", width = 18, height = 12, units = "cm", bg = "white",res = 300)
 fig_meat
 dev.off()
+
+#Table 3.3.3.3.1 and Table 3.3.3
+
+m2 <-m1%>% 
+  mutate(Burger = case_when(`Product type` == "Burger" ~  1, TRUE ~ 0),
+         Sausages = case_when(`Product type` == "Sausages" ~  1, TRUE ~ 0),
+         `Minced and pulled` = case_when(`Product type` == "Minced and pulled" ~  1, TRUE ~ 0),
+         Balls = case_when(`Product type` == "Balls" ~  1, TRUE ~ 0),
+         Schnitzel = case_when(`Product type` == "Schnitzel" ~  1, TRUE ~ 0),
+         `Bread toppings` = case_when(`Product type` == "Bread toppings" ~  1, TRUE ~ 0)) %>% 
+  select(3:10) %>% 
+  filter(!is.na(`E number`))
+
+a2 <-a1%>% 
+  mutate(`Burger, plant-based` = case_when(`Product type` == "Burger, plant-based" ~  1, TRUE ~ 0),
+         `Sausages, plant-based` = case_when(`Product type` == "Sausages, plant-based" ~  1, TRUE ~ 0),
+         `Minced and pulled, plant-based` = case_when(`Product type` == "Minced and pulled, plant-based" ~  1, TRUE ~ 0),
+         `Balls, plant-based` = case_when(`Product type` == "Balls, plant-based" ~  1, TRUE ~ 0),
+         `Schnitzel, plant-based` = case_when(`Product type` == "Schnitzel, plant-based" ~  1, TRUE ~ 0),
+         `Bread toppings, plant-based` = case_when(`Product type` == "Bread toppings, plant-based" ~  1, TRUE ~ 0)) %>% 
+  select(3:10) %>% 
+  filter(!is.na(`E number`))
+
+write.xlsx(m2, file = "./output/additives_in_meat.xlsx")
+write.xlsx(a2, file = "./output/additives_in_meatanalogs.xlsx")
+#Outputs in the two excel files used for preparing Table 3.3.3.3.1 and Table 3.3.3
+#Pivot table function in excel used for summarising.
