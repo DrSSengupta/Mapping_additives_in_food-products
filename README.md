@@ -28,6 +28,11 @@ The present dataset and code demonstrates the how the data on additives present 
 ##Folder: "scripts"
 - File: "additives.Rmd"
 --This file contains the R code for reproducing the upset plot in Figure 3.3.3.1-2.
+- File: "additives_in_meat.xlsx"
+--
+- File: "additives_in_meatanalogs.xlsx"
+
+--
 
 ##File: "README.md" (this file)
 -This is the metadatafile describing the contents of the project.
