@@ -1,14 +1,14 @@
 # Mapping-of-nutrients-food-additives-and-contaminants-in-plant-based-and-gluten-free-food-products-
 
 ## Description of data
-This data set is linked to the following project/report of the Norwegian Scientific Committee (VKM): <https://vkm.no/english/riskassessments/allpublications/mappingthenutrientsfoodadditivesandcontaminantsfoundinplantbasedandglutenfreefoodproducts.4.2b25ffa41862c540f3370f7b.html>
+This data set is linked to the following project/report of the Norwegian Scientific Committee (VKM): <https://vkm.no/english/riskassessments/allpublications/mappingthenutrientsfoodadditivesandcontaminantsfoundinplantbasedandglutenfreefoodproducts.4.2b25ffa41862c540f3370f7b.html>.  
 The present dataset and code demonstrates how the data on additives present in meat products and plant-based meat analogue products were presented in the report.
 
 ## Contents
 
 ### Folder: "data"
 
--File: "meat_and_analogues.xlsx"
+- File: "meat_and_analogues.xlsx"
 
 --This file contains only one sheet ("Shhet 1"") with a dataset of 480 rows and 4 columns.
   Columns:
