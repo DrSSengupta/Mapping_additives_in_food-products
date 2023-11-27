@@ -1,13 +1,13 @@
 # Mapping-of-nutrients-food-additives-and-contaminants-in-plant-based-and-gluten-free-food-products-
 
-**Authors*
-Sagnik Sengupta 
+## Authors
+**Sagnik Sengupta**
 Affiliation: Norwegian Scientific Committee for Food and Environment (VKM)
 
-Trine Husøy
+**Trine Husøy**
 Affiliation: Norwegian Scientific Committee for Food and Environment (VKM), The Norwegian Institute of Public Health (FHI)
 
-Josef Rasinger
+**Josef Daniel Rasinger**
 Affiliation: The Norwegian Scientific Committee for Food and Environment (VKM), Institute of Marine Research (HI). 
 
 
