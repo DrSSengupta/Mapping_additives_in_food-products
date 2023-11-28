@@ -21,10 +21,10 @@ The present dataset and code demonstrates how the data on additives present in m
 
 **File: meat_and_analogues.xlsx**
 
-This file contains only one sheet ("Shhet 1").  
+This file contains only one sheet ("Sheet 1").  
 
 Columns:
-- Identifier: This column contains the unique ID for each product included in this report. Meat products have identifiers starting with "M" and followed by digits. Plant-based meat analogue products have identifiers starting with "MA" and followed by digits.
+- Identifier: This column contains the unique ID for each product included in this report. Meat products have identifiers starting with "M" and are followed by digits. Plant-based meat analogue products have identifiers starting with "MA" and are followed by digits.
 - Product type: Specified as in Table 3.3.3.1-1 of the report.
 - E number: E numbers identify each food additive.
 - Category: Type of food additive  
@@ -37,7 +37,7 @@ Remarks:
 
 "E number" and "Category" has been prepared according to Codex Alimentarius (2021); see Section 6 (Appendix 1) of the report for further details.  
 
-Products that lacked information on additives are not included in the present dataset but inlcuded in the summary presented in Table 3.3.3.1-1.  
+Products that lacked information on additives are not included in the present dataset but are inlcuded in the summary presented in Table 3.3.3.1-1.  
 
 
 ### Folder: "scripts"
@@ -62,14 +62,14 @@ An example of data files exported from R. The columns "E number and "Category" a
 
 **File: processed_additives_in_meat.xlsx**  
 
-This file demonstrates how the output from R ("additives_in_meat.xlsx") was handled in excel to prepare Table 3.3.3.1-3.  
+This file demonstrates how the output from R ("additives_in_meat.xlsx") was handled in Excel to prepare Table 3.3.3.1-3.  
 
 - Sheet: "exported_from_R": Contains the R output.
 - Sheet 2: Pivot table function was used to calculate the number of products (of each product type) that contains a specific food additive. The resulting "raw" table is seen uppermost in this sheet.Further below the table was reformatted to retain the required values. Samples sizes for each product type were obtained  from the report (Table 3.3.3.1-1). Thereafter, in the table marked with the text (red fonts), "Contents of Table 3.3.3.1-3 calculated below", we calculate the percantage of products (within a product type) that contains each of the food additives. 
 
 **File: processed_additives_in_meatanalogs.xlsx**  
 
-This file demonstrates how the output from R ("additives_in_meatanalogs.xlsx") was handled in excel to prepare Table 3.3.3.1-2.  
+This file demonstrates how the output from R ("additives_in_meatanalogs.xlsx") was handled in Excel to prepare Table 3.3.3.1-2.  
 
 - Sheet: "exported_from_R": Contains the R output.  
 - Sheet 2: Pivot table function was used to calculate the number of products (of each product type) that contains a specific food additive. The resulting "raw" table is seen uppermost in this sheet. Further below the table was reformatted to retain the required values. Samples sizes for each product type were obtained  from the report (Table 3.3.3.1-1). Thereafter, in the table marked with the text,  "Contents of Table 3.3.3.1-2 calculated below" (red fonts), we calculate the percentage of products (within a product type) that contains each of the food additives.
